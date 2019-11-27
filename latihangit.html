@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan</title>
+</head>
+<body>
+
+
+<div class="container">
+	<button>1
+		<div class="star">&#127775;</div>
+	</button>
+	<button>2
+		<div class="star">&#127775;&#127775;</div>
+	</button>
+	<button>3
+		<div class="star">&#127775;&#127775;&#127775;</div>
+	</button>
+</div>
+
+
+
+<style>
+	body {
+		background: #1b2b34;
+	}
+
+	.container{
+		padding: 1em;
+		background: #ccc;
+		width: 400px;
+		margin: auto;
+	}
+
+	button{
+		font-size: 2em;
+		font-family: fantasy;
+		padding: .4em;
+		background:  #eee;
+		border: 0;
+		border-radius: 5px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		outline: none;
+	}
+
+	button:hover {
+		background: #fff;
+		cursor: pointer;
+	}
+
+	.star{
+		width: 70px;
+		font-size: 1rem;
+	}
+</style>
+
+<script >
+	document.querySelector('#level1').onclick = function(){
+		document.body.style.background = 'orange';
+		alert('Level 1 dipilih!');
+	}
+	document.querySelector('#level2').onclick = function(){
+		document.body.style.background = 'purple';
+		alert('Level 2 dipilih!');
+	}
+	document.querySelector('#level3').onclick = function(){
+		document.body.style.background = 'cornflowerblue';
+		alert('Level 3 dipilih!');
+	}
+
+
+</script>
+
+
+</body>
+</html>
